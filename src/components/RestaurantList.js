@@ -3,7 +3,7 @@ import RestaurantItem from "./RestaurantItem";
 import axios from "axios";
 import "../RestaurantList.css";
 
-axios.defaults.baseURL = "http://localhost:5001";
+axios.defaults.baseURL = "https://foodie-light-server.vercel.app/";
 
 const RestaurantList = () => {
   const [restaurants, setRestaurants] = useState([]);
