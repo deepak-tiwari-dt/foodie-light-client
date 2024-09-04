@@ -1,0 +1,222 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url(../public/replicate.svg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  flex: 1;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.add-restaurant-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.add-restaurant-button:hover {
+  background-color: #45a049;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 12px 18px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #d6d6d6;
+  color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+.edit-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.edit-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-form button {
+  width: 48%;
+  padding: 12px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-form button:hover {
+  background-color: #0056b3;
+}
+
+.restaurant-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.restaurant-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-item h4 {
+  margin: 0 0 8px;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.restaurant-item p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.restaurant-item button {
+  background-color: #c82333;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.restaurant-item button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 767px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .restaurant-item {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+
+  .pagination button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .edit-form {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .pagination button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .edit-form {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .restaurant-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}

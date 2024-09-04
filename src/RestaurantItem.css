@@ -1,0 +1,85 @@
+.restaurant-item .edit-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #007bff;
+  color: white;
+}
+
+.restaurant-item .edit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.restaurant-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.restaurant-item img:hover {
+  transform: scale(1.1);
+}
+
+.restaurant-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.restaurant-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.restaurant-button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.restaurant-button:hover {
+  background-color: #ff4500;
+  transform: translateY(-2px);
+}
+
+.delete-button,
+.edit-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
