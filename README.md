@@ -4,3 +4,4 @@
 
 ### [Foodie Delight](https://foodie-light-client.vercel.app/)
 
+![Img](./public/home-page.png)
