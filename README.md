@@ -8,7 +8,7 @@
 
 #### STEPS TO SETUP CLIENT:
 
-> Copy commands from below one by one and execute in terminal
+> Copy commands from below one by one and execute in terminal to run it locally
 
 ```bash
 git clone https://github.com/deepak-tiwari-dt/foodie-light-client.git
